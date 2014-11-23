@@ -208,7 +208,7 @@ a:focus {
   padding-top: 100px;
   padding-bottom: 0px;
   text-align: center;
-  background-image: url(/assets/img/esap-main-new.jpg);
+  background-image: url(/assets/images/esap-main-new.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -241,7 +241,6 @@ a:focus {
 
 /* Services Wrap */
 #service {
-  margin-top: 100px;
   margin-bottom: 80px;
 }
 
@@ -292,7 +291,7 @@ a:focus {
 }
 
 #twrap {
-  background: url(/assets/img/main-bw-gym.jpg) no-repeat center top;
+  background: url(/assets/images/main-bw-gym.jpg) no-repeat center top;
   margin-top: 0px;
   padding-top: 60px;
   text-align: center;
@@ -399,7 +398,7 @@ csmall2 {
 
 /* Contact Page */
 #contactwrap {
-  background: url(../img/contact.jpg) no-repeat center top;
+  background: url(../images/contact.jpg) no-repeat center top;
   margin-top: -60px;
   padding-top: 0px;
   text-align: center;
