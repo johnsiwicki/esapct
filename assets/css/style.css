@@ -290,6 +290,11 @@ a:focus {
   margin-bottom: 50px;
 }
 
+.test-wrapper {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
 #twrap {
   background: url(/assets/images/main-bw-gym.jpg) no-repeat center top;
   margin-top: 0px;
@@ -317,7 +322,8 @@ a:focus {
 
 #twrap p {
   color: black;
-  font-size: 15px;
+  font-size: 19px;
+  font-weight: bold;
   line-height: 30px;
 }
 
@@ -459,6 +465,10 @@ csmall2 {
   padding-top: 80px;
 }
 
+#schedule h2 {
+  text-align: center;
+}
+
 #weekschedule th, #weekschedule td {
   margin: 0;
   text-align: center;
@@ -521,24 +531,6 @@ csmall2 {
 .next, .prev {
   float: right;
   text-align: right;
-}
-
-/*override modal for demo only*/
-.modal-dialog {
-  max-width: 500px;
-  padding-top: 90px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal-dialog {
-    width: 500px;
-    padding-top: 90px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  #ads {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
