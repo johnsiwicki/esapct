@@ -292,7 +292,7 @@ a:focus {
 }
 
 #twrap {
-  background: url(../img/main-bw-gym.jpg) no-repeat center top;
+  background: url(/assets/img/main-bw-gym.jpg) no-repeat center top;
   margin-top: 0px;
   padding-top: 60px;
   text-align: center;
@@ -456,6 +456,10 @@ csmall2 {
   font-size: 18px;
 }
 
+#schedule, #about, #service {
+  padding-top: 80px;
+}
+
 #weekschedule th, #weekschedule td {
   margin: 0;
   text-align: center;
@@ -515,7 +519,7 @@ csmall2 {
   font-weight: bold;
 }
 
-.next {
+.next, .prev {
   float: right;
   text-align: right;
 }
