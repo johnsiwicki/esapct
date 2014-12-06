@@ -84,6 +84,7 @@ function AccessTumlbrApi(target, APIKey, options){
                 thisPost = $("<div class='post'/>"),
                 postDate = formatedPostDate(this.timestamp),
                 linkURL = this.post_url;
+                video_url = this.video_url;
 
             switch (postType) {
 
@@ -173,10 +174,11 @@ function AccessTumlbrApi(target, APIKey, options){
                 thisPost.addClass('video-post col-md-6')
                         .append(
                             '<p class="post-date">' + postDate + '</p>', 
-                            
-                            this.player[2].embed_code, 
+                            //this.player[2].embed_code,  tumblr emded code
+                            '<video src="'+ video_url +'" controls></video>',
                             this.caption, 
-                            '<p><a class="href="' + linkURL + '">Go to tumblr post...</a></p>'
+                            '<p><a href="' + linkURL + '">Go to tumblr post...</a></p>'
+                            
                         );
                 frag.append(thisPost);
                 break; /*** END VIDEO POST ***/
@@ -296,3 +298,6 @@ function AccessTumlbrApi(target, APIKey, options){
 }
 
 })(jQuery);
+
+
+

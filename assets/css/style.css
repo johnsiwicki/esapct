@@ -56,6 +56,10 @@ a {
   transition: background-color .4s linear, color .4s linear;
 }
 
+video {
+  max-width: 100%;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -531,6 +535,10 @@ csmall2 {
 .next, .prev {
   float: right;
   text-align: right;
+}
+
+.post-date {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
