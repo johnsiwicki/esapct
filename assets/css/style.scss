@@ -99,20 +99,27 @@ a:focus {
 
   @media (min-width: 800px) and (max-width: 1200px) {
         .navbar-brand {
-			font-size: 21px;
+			font-size: 20px;
 			line-height: 24px;
 		}
       }
 
   @media (min-width: 400px) and (max-width: 500px) {
         .navbar-brand {
-			font-size: 20px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+      }
+
+        @media (max-width: 450px) {
+        .navbar-brand {
+			font-size: 16px;
 			line-height: 24px;
 		}
       }
 
 
-  @media (min-width: 100px) and (max-width: 400px) {
+  @media (min-width: 100px) and (max-width: 405px) {
         .navbar-brand {
 			font-size: 16px;
 			line-height: 24px;
