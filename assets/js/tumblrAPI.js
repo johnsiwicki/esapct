@@ -100,7 +100,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             imgSRC, 
                             this.player, 
                             this.caption, 
-                            '<a href="' + linkURL + '">Go to tumblr post...</a>'
+                            '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
                 break; /*** END AUDIO POST***/
@@ -112,7 +112,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             '<h2>' + this.title + '</h2>', 
                             '<p class="post-date">' + postDate + '</p>', 
                             this.body, 
-                            '<a href="' + linkURL + '">Go to tumblr post...</a>'
+                            '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
                 break; /*** END TEXT POST***/            
@@ -152,7 +152,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             '<p class="post-date">' + postDate + '</p>', 
                             photoContainer, 
                             this.caption, 
-                            '<a href="' + linkURL + '">Go to tumblr post...</a>'
+                            '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
                 break; /*** END PHOTO POST***/
@@ -164,7 +164,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             '<p class="post-date">' + postDate + '</p>', 
                             '<q class="quote-text">' + this.text + '</q>', 
                             '<p class="quote-author"> &#8212; ' + this.source + '</p>', 
-                            '<a href="' + linkURL + '">Go to tumblr post...</a>'
+                            '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
                 break; /*** END QUOTE POST***/
@@ -177,7 +177,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             //this.player[2].embed_code,  tumblr emded code
                             '<video src="'+ video_url +'" controls></video>',
                             this.caption, 
-                            '<p><a href="' + linkURL + '">Go to tumblr post...</a></p>'
+                            '<p><a href="' + linkURL + '">Full Post...</a></p>'
                             
                         );
                 frag.append(thisPost);
