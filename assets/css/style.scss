@@ -104,27 +104,14 @@ a:focus {
 		}
       }
 
-  @media (min-width: 400px) and (max-width: 500px) {
-        .navbar-brand {
-			font-size: 18px;
-			line-height: 24px;
-		}
-      }
-
-        @media (max-width: 450px) {
+  @media (min-width: 200px) and (max-width: 500px) {
         .navbar-brand {
 			font-size: 16px;
 			line-height: 24px;
 		}
       }
 
-
-  @media (min-width: 100px) and (max-width: 405px) {
-        .navbar-brand {
-			font-size: 16px;
-			line-height: 24px;
-		}
-      }
+     
 
 
 .navbar-header .navbar-brand {
