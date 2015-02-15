@@ -164,7 +164,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             '<p class="post-date">' + postDate + '</p>',
                             '<q class="quote-text">' + this.text + '</q>',
                             '<p class="quote-author"> &#8212; ' + this.source + '</p>',
-                            '<a href="' + linkURL + '">Full Post...</a>'
+                            '<a href="' + linkURL + '">Full Post.</a>'
                         );
                 frag.append(thisPost);
                 break; /*** END QUOTE POST***/
