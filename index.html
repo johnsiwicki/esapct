@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-    <title>Elite Strength and Performance - Thomaston, CT| </title>
+    <title>Elite Strength and Performance - Thomaston, CT </title>
     <meta name="description" content="Elite Strength and Performance specializes in fitness boot camps, kettlebell training, personal training, and small group training.">
 
     <!-- Bootstrap core CSS -->
@@ -36,10 +36,10 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="#service">PROGRAMS</a></li>
             <li><a href="#cwrap">COACHES</a></li>
-            <li><a href="#schedule">SCHEDULE</a></li>
+            <li><a href="#schedule">CLASS SCHEDULE</a></li>
             <li><a href="#about">CONTACT</a></li>
             <li><a href="#twrap">TESTIMONIALS</a></li>
           
@@ -251,7 +251,7 @@
      ***************************************************************************************************************** -->
          <div class="container" id="schedule">
             <div id="schedule-wrap">
-                <h2>Schedule</h2>
+                <h2>Class Schedule</h2>
                 <div class="table-responsive">
                 <table width="100%" align="center" id="weekschedule" class="table">
     <div id="head_nav">
@@ -259,11 +259,21 @@
         <th>Monday</th>
         <th>Tuesday</th>
         <th>Wednesday</th>
-        <th>Thrusday</th>
+        <th>Thursday</th>
         <th>Friday</th>
         <th>Saturday</th>
     </tr>
 </div>  
+
+    <tr>
+            <td>5:30am</td>
+            <td>5:30am</td>
+            <td>5:30am</td>
+            <td>5:30am</td>
+            <td>5:30am</td>
+            <td></td>
+
+    </tr>
 
     <tr>
             <td>6:45am</td>
@@ -272,8 +282,7 @@
             <td>6:45am</td>
             <td>6:45am</td>
             <td>7:30am</td>
- 
-        </div>
+
     </tr>
 
     <tr>
@@ -354,22 +363,62 @@
 	 <div id="about" class="container mtb">
 	 	<div class="row">
 	 		<div class="col-lg-4">
-		 		<h4>More About Us.</h4>
+		 		<h4>More About Us</h4>
                 <div class="hline"></div>
-		 		<p>Elite Strength and Performance gives all fitness levels the opportunity to build strength and endurance, tone muscles, and burn fat. </p>
-        <p>Three times a week, for a 45 minute session, Elite will provide you with a high-energy fitness class that blends metabolic fitness training circuits and  fitness boot camp activities that guarantee you a full body workout to improve one’s overall speed, movement, and strength.</p>
+		 		<p>ESAP will provide clients with 45 minutes of a high-energy fitness
+class that blends metabolic fitness training circuits and fitness boot
+camp activities which guarantee one a full body workout to improve
+one’s overall speed, movement, and strength.
  				<!-- <p><br/><a href="about.html" class="btn btn-theme">More Info</a></p> -->
 	 		</div>
 	 		
 	 		<div class="col-lg-4">
-	 			<h4>Frequently Asked</h4>
+	 			<h4>Frequently Asked Questions</h4>
 	 			<div class="hline"></div>
-	 			<p><button type="button" class="btn btn-warning" data-toggle="popover" title="" data-content="Water (We do have water for sale, but you should walk in preparedwith your own.)">What should I bring with me?</button></p>
-	 			<p><button type="button" class="btn btn-warning" data-toggle="popover" title="" data-content="Good comfortable sneakers, and actual workout clothes, nothing baggy.">What should I wear?</button></p>
-        <p><button type="button" class="btn btn-warning" data-toggle="popover" title="" data-content="Results are driven by how hard an individual works, their commitment to the gym, and their daily lifestyle.">How fast will I see results?</button></p>
-        <p><button type="button" class="btn btn-warning" data-toggle="popover" title="" data-content="There are modifications for everything. We will find an exercise that focuses on the same muscle group.">Are there modifications to the exercises?</button></p>
-	 			<p><button type="button" class="btn btn-warning" data-toggle="popover" title="" data-content="You are never too old. Everyone works at their own pace and level.">Am I too old to do this?
-</button></p>
+
+	 			<p><a class="btn btn-warning" data-toggle="collapse" href="#collapse1">What
+          should I bring with me?</a></p>
+          <div class="collapse" id="collapse1">
+              <div class="well">
+                  Water (We do have water for sale, but you should walk in prepared with
+                  your own.)
+              </div>
+          </div>
+
+          <p><a class="btn btn-warning" data-toggle="collapse" href="#collapse2">What
+          should I wear?</a></p>
+
+          <div class="collapse" id="collapse2">
+              <div class="well">
+                  Good comfortable sneakers, and actual workout clothes, nothing baggy.
+              </div>
+          </div>
+
+
+        <p><a class="btn btn-warning" data-toggle="collapse" href="#collapse3">How fast will I see results?</a></p>
+        <div class="collapse" id="collapse3">
+            <div class="well">
+                Results are driven by how hard an individual works, their commitment to
+                the gym, and their daily lifestyle.
+            </div>
+        </div>
+
+       <p><a class="btn btn-warning" data-toggle="collapse" href="#collapse4">Are there modifications to the exercises?</a></p>
+        <div class="collapse" id="collapse4">
+            <div class="well">
+                There are modifications for everything. We will find an exercise that focuses on the same muscle group.
+            </div>
+        </div>
+
+	 			<p><a class="btn btn-warning" data-toggle="collapse" href="#collapse5">Am I too old to do this?</a></p>
+
+          <div class="collapse" id="collapse5">
+              <div class="well">
+                  You are never too old. Everyone works at their own pace and level.
+              </div>
+          </div>
+
+
 	 			
 	 		</div>
 	 		
@@ -401,7 +450,38 @@
          <br>- Dawn Rousseau, Thomaston, CT<p>
 
  
-        <!-- <p>Click here for more!</p> -->
+         <p ><a data-toggle="modal" data-target=".bs-example-modal-lg" style="cursor: pointer;">Click here for more!</a></p> 
+
+
+         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <h2 class="modal-title" id="myModalLabel">Testimonials</h2>
+      <p>"For all of you wondering what this Elite Strength and Performance is … it is all about my man Kyle Stevenson and his wife Jessica. Let me paint you a picture...because it is far cry from the nightclubs acting as gyms that most of you have been used to. You pull into the parking lot of the centuries old Seth Thomas Clock Factory. You enter in through the side door, and make your way up the concrete stairs to the third floor. You can still feel and smell what it must of been like over a hundred years ago when they were cranking out clocks. Then, you open up the original fire doors with the return weight chain, and you head down the aisle that once was lined with machines and workers by the hundreds. While walking, you pass the storage areas used now for spices and you approach a pair of unassuming white wood doors (hollow-core for my Firefighter brethren). You open the doors and then the blast furnace heat hits you. Amazingly, you haven’t even started yet and you’re sweating. Once you enter you realize there is no juice bar, no flat screen TV, no AC, and no excuses, just some weights, tires, ropes, kettlebells, your sweat, your desire, your goals. Get ready to bring it! 45 minutes later you collapse, finished, you take a swig of your now warm water and it is the best tasting water you ever had. You actually look forward to that shower because you know you earned it. So enjoy your "workout" later at that club gym. I’m sure you’ll get satisfaction on that elliptical while you’re watching Springer!" </p>
+
+       <span style="color: black; font-size: 19px; font-weight: bold; line-height: 30px;"> -Joe Scaglione, Wolcott, CT</span>
+
+       <p>"<strong>E</strong>lite Strength and Performance is ...</p>
+
+       <p> <strong>L</strong>ife changing</p>
+
+ <p><strong>I</strong>nsanely Addicting</p>
+
+ <p><strong>T</strong>remendously Empowering</p>
+ <p><strong>E</strong>nergizing"</p> 
+  <span style="color: black; font-size: 19px; font-weight: bold; line-height: 30px;"> - Christine Schwartz, Thomaston, CT</span>
+ 
+
+
+ 
+
+
+    </div>
+  </div>
+</div>
+
+  
+
 
 	 			</div>
 	 		</div><! --/row -->
@@ -430,11 +510,15 @@
           </p>
         </div>
         <div class="col-lg-8">
-          <h4>Weather Alerts</h4>
+          <h4>Weather/ESAP
+Update Alerts</h4>
           <div class="hline-w"></div>
           <p>
-            ESAP clients due to the fabulous weather in CT. You can sign up for alerts that will go directly to your cell phone or email. These alerts would include any class cancellations due to weather, etc. To sign up - <br/>
-            Send a text to - (424) 835-7594<br/>
+            Sign up for alerts that will go directly to your cell phone or email.
+These alerts would include any class cancellations due to weather,
+changes in the normal schedule, etc. <br>
+To sign up ...<br>
+Send a text to - (424) 835-7594<br>
 With the message - @esap
 
           </p>
