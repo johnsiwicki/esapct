@@ -78,10 +78,10 @@ function AccessTumlbrApi(target, APIKey, options){
     /*** POSTS ***/
     var formatPosts = function (blog, data) {
         var frag = $("<div />");
-       
+
         $.each(data.response.posts, function () {
             var postType = this.type,
-                thisPost = $("<div class='post'/>"),
+                thisPost = $("<div class='post col-md-6'/>"),
                 postDate = formatedPostDate(this.timestamp),
                 linkURL = this.post_url;
                 video_url = this.video_url;
@@ -95,11 +95,11 @@ function AccessTumlbrApi(target, APIKey, options){
 
                 thisPost.addClass('audio-post')
                         .append(
-                            '<h2>' + audioTitle + '</h2>', 
-                            '<p class="post-date">' + postDate + '</p>', 
-                            imgSRC, 
-                            this.player, 
-                            this.caption, 
+                            '<h2>' + audioTitle + '</h2>',
+                            '<p class="post-date">' + postDate + '</p>',
+                            imgSRC,
+                            this.player,
+                            this.caption,
                             '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
@@ -109,13 +109,13 @@ function AccessTumlbrApi(target, APIKey, options){
             case "text":
                 thisPost.addClass('text-post')
                         .append(
-                            '<h2>' + this.title + '</h2>', 
-                            '<p class="post-date">' + postDate + '</p>', 
-                            this.body, 
+                            '<h2>' + this.title + '</h2>',
+                            '<p class="post-date">' + postDate + '</p>',
+                            this.body,
                             '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
-                break; /*** END TEXT POST***/            
+                break; /*** END TEXT POST***/
 
             /*** PHOTO POST ***/
             case "photo":
@@ -149,21 +149,21 @@ function AccessTumlbrApi(target, APIKey, options){
                 }
                 thisPost.addClass('photo-post')
                         .append(
-                            '<p class="post-date">' + postDate + '</p>', 
-                            photoContainer, 
-                            this.caption, 
+                            '<p class="post-date">' + postDate + '</p>',
+                            photoContainer,
+                            this.caption,
                             '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
                 break; /*** END PHOTO POST***/
-            
+
             /*** QUOTE POST ***/
             case "quote":
                 thisPost.addClass('quote-post col-md-6')
                         .append(
-                            '<p class="post-date">' + postDate + '</p>', 
-                            '<q class="quote-text">' + this.text + '</q>', 
-                            '<p class="quote-author"> &#8212; ' + this.source + '</p>', 
+                            '<p class="post-date">' + postDate + '</p>',
+                            '<q class="quote-text">' + this.text + '</q>',
+                            '<p class="quote-author"> &#8212; ' + this.source + '</p>',
                             '<a href="' + linkURL + '">Full Post...</a>'
                         );
                 frag.append(thisPost);
@@ -173,12 +173,12 @@ function AccessTumlbrApi(target, APIKey, options){
             case "video":
                 thisPost.addClass('video-post col-md-6')
                         .append(
-                            '<p class="post-date">' + postDate + '</p>', 
+                            '<p class="post-date">' + postDate + '</p>',
                             //this.player[2].embed_code,  tumblr emded code
                             '<video src="'+ video_url +'" controls></video>',
-                            this.caption, 
+                            this.caption,
                             '<p><a href="' + linkURL + '">Full Post...</a></p>'
-                            
+
                         );
                 frag.append(thisPost);
                 break; /*** END VIDEO POST ***/
@@ -186,9 +186,9 @@ function AccessTumlbrApi(target, APIKey, options){
             /*** LINK POST ***/
             case "link":
                 var description;
-                    
-                if (this.description){                    
-                    description = this.description;                
+
+                if (this.description){
+                    description = this.description;
                 } else {
                     description = "";
                 }
@@ -221,7 +221,7 @@ function AccessTumlbrApi(target, APIKey, options){
                 break; /*** END CHAT POST ***/
             }
         });
-        
+
         blog.append(frag);
     } /*** END POSTS ***/
 
@@ -245,13 +245,13 @@ function AccessTumlbrApi(target, APIKey, options){
 
             target.append(paginationContainer);
             bindPagination(target, APIKey);
-        }  
+        }
     }
 
     var bindPagination = function (target, APIKey) {
         $('.blog-btn').on('click.embedTumblr', function(){
             if ($(this).hasClass('next')) {
-                s.settings.currentPage++;   
+                s.settings.currentPage++;
             }
             if ($(this).hasClass('prev')) {
                 s.settings.currentPage--;
@@ -274,15 +274,15 @@ function AccessTumlbrApi(target, APIKey, options){
                 success: function (data) {
                     target.html("");
                     formatPosts(target, data);
-                    createPagination(target, APIKey, data, postsPerPage, currentPage);                       
+                    createPagination(target, APIKey, data, postsPerPage, currentPage);
                 },
                 error: function () {
                     target.append(s.settings.error);
                 }
-        });              
+        });
     }
 
-    s.init = function () {        
+    s.init = function () {
         s.getPosts(target, APIKey);
     }
 
@@ -298,6 +298,3 @@ function AccessTumlbrApi(target, APIKey, options){
 }
 
 })(jQuery);
-
-
-
