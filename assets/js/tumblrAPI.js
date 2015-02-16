@@ -120,7 +120,7 @@ function AccessTumlbrApi(target, APIKey, options){
             /*** PHOTO POST ***/
             case "photo":
                 var photos = this.photos,
-                    photoContainer = $('<div class="tumblr-photos col-md-6" />');
+                    photoContainer = $('<div class="tumblr-photos col-md-12" />');
 
                 for (i = 0; i < photos.length; i++) {
                     var figure = $('<figure />');
@@ -152,7 +152,7 @@ function AccessTumlbrApi(target, APIKey, options){
                             '<p class="post-date">' + postDate + '</p>',
                             photoContainer,
                             this.caption,
-                            '<a href="' + linkURL + '">Full Post...</a>'
+                            '<a href="' + linkURL + '"></a>'
                         );
                 frag.append(thisPost);
                 break; /*** END PHOTO POST***/
